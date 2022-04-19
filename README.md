@@ -1,1 +1,0 @@
-# aimo-mala.github.io

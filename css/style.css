@@ -486,7 +486,7 @@ background-image: radial-gradient(circle, #6bd0d1, #7ad4e1, #8dd7ee, #a3daf7, #b
   height: 300px;
   width: 100.1%;
   opacity: 0;
-  background: rgba(237, 235, 232, 0.9);
+  background: rgba(240, 230, 0, 0.9);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

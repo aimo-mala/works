@@ -82,17 +82,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: black;
-  background:yellow ;/*#cabcab*/
+  background:#c1ff14;/*#cabcab*/
 }
 
 ::-moz-selection {
   color:black;
-   background:yellow ;/*#cabcab*/
+   background:#c1ff14 ;/*#cabcab*/
 }
 
 ::selection {
   color:black;
-   background:yellow ;/*#cabcab*/
+   background:#c1ff14 ;/*#cabcab*/
 }
 
 .fh5co-nav {
@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-bg-section {
-  background: rgba(0, 0, 0, 0.05);
+  background: #EDEDF5; /*rgba(0, 0, 0, 0.05)*/
 }
 
 .fh5co-bg-start-section {
@@ -487,7 +487,7 @@ background-image: radial-gradient(circle, #6bd0d1, #7ad4e1, #8dd7ee, #a3daf7, #b
   width: 100.1%;
   opacity: 0;
   border-radius:20px;
-  background: rgba(240, 230, 0, 0.9);
+  background:#c1ff14;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -686,7 +686,7 @@ background-image: radial-gradient(circle, #6bd0d1, #7ad4e1, #8dd7ee, #a3daf7, #b
 }
 
 #fh5co-started {
-  background: #dadada;
+  background: #c1ff14; /*#dadada*/
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 20px !important;
@@ -716,7 +716,7 @@ background-image: radial-gradient(circle, #6bd0d1, #7ad4e1, #8dd7ee, #a3daf7, #b
 }
 
 #fh5co-footer {
-  background: #efefef;
+  background:#c1ff14;
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
@@ -1087,7 +1087,7 @@ background-image: radial-gradient(circle, #6bd0d1, #7ad4e1, #8dd7ee, #a3daf7, #b
 .btn-primary {
   background: #00000;
   color: #fff;
-  border: 2px solid #00000;
+  border: 2px solid;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #00000 !important;
@@ -1347,6 +1347,42 @@ background:linear-gradient(90deg, gray 66%, transparent 0) repeat-x; background-
   font: 100px Helvetica, Sans-Serif;
 }
 
+
+/*colour*/
+
+.kisscx-green,.kisscx-hover-green:hover {
+    color: #000!important;
+    background-color: #c1ff14!important
+}
+
+
+/**fun**/
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+svg {
+  path {
+    transition: .1s;
+  }
+
+  &:hover path {
+    d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+  }
+}
+
+/**end**/
 
 
 /*scrolldown*/

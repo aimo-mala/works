@@ -147,9 +147,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	
 	<body>
-
-	<div class="fh5co-loader"></div>
-
 <!--nav styel 1
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
@@ -188,6 +185,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</nav>
 -->
+  
+  <!-- fun -->
+<div class="svg-container">  
+    <svg viewbox="0 0 800 400" class="svg">
+    	   <defs>
+            <linearGradient id="grad1" x1="0%" y1="100%" x2="30%" y2="0%">
+                <stop offset="0%" stop-color="#C1FF14"/>
+                <stop offset="30%" stop-color="#C1FF14" stop-opacity="0" />
+            </linearGradient>
+        </defs>
+      <path id="curve" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z" fill="url(#grad1)"/>
+      </path>
+    </svg>
+  </div>
+  <!--end-->
 
 <!--nav styel 2 - only logo-->
 	<nav role="navigation">
@@ -198,18 +210,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </nav>
 <!--end of nav styel2 -->
-
-
-
-	<div id="fh5co-work">
+	<div id="fh5co-work">	 
 		<div class="container">
-
 			<div class="row top-line animate-box">
 				<div class="col-md-7 col-md-push-4 text-left intro" id="work">
 					<p style="font-family:ff-tisa-web-pro,sans-serif;font-size:69px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:70;"> <span style="font-weight:bold"></img>Y</span>uting <span style="font-weight:bold">O.</span></p> 
 
 <!--hide udercode class="dash_underline"-->
-
 
 						<p style="font-family:Tisa Pro Thin Italic,sans-serif;font-size:30px;letter-spacing:3px;line-height:50px; color: rgba(1,1,1,0.9);font-weight:70;"><span>Visual product designer with the goal of </span>turning a business product into <span style="font-family:Tisa Pro Light Italic, sans-serif;font-size:47px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:70;">usable</span> <span class="amp"> & </span> <span style="font-family:Tisa Pro Light Italic, sans-serif;font-size:47px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:70;">desirable.<p></br>
 
@@ -295,9 +302,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<p style="font-family:ff-tisa-web-pro,sans-serif;font-size:14.5px;line-height: 25px;">The mission is to reform the trading experience (multi-chain swap) that's meant to be more lean, intuitive and yet to offer a streamlined experience not only for the existing wallet users but also to those newcomers who just delve into crypto space. Aside from the UX challenges that's highly demanded in the transition from web 2.0 to 3.0. I also lead the AA smart wallet that incorporates web browser which expedites the onboarding with a higher measurement of security...
 
 							</p>
-							<p><a href="defi.html" class="btn btn-primary btn-outline w3-black" style="background: #6fd3da;
-  color: #fff;
-  border: 1px;border-radius:5px;">Learn More</a></p>
+							<p><a href="defi.html" class="btn btn-primary w3-black" style="color:white; border: 1px;border-radius:5px;">Learn More</a></p>
 				
 						</div>
   </div>	<br><br><br>
@@ -318,9 +323,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<span class="w3-text-dark-gray" style="font-family:Tisa Pro,sans-serif;">Cross-Border e-Commerce</span>
 							<h3 ><span style="font-family:Tisa Pro,sans-serif; font-weight:100;font-size:26px;">Shaping the future of cross-border shopping</span></h3>
 							<p style="font-family:ff-tisa-web-pro,sans-serif;font-size:14.5px;line-height: 25px;">The startup I’ve worked with is servicing their customers effortlessly to shop and ship with the global brands which cannot operate in their home country/region. Their freight forwarding services & warehouses cover the globe sprawling from Asia, Europe, the UK to the USA. They wanted to revamp their responsive website for 10 regions/countries, and also to build native IOS/Android apps with a tight deadline...</p>
-							<p><a href="https://kisscx.com/2022/01/01/Shaping-the-Cross-Border-Shipping-&-Shopping/" class="btn btn-primary btn-outline w3-black" style="background: #6fd3da;
-  color: #fff;
-  border: 1px;border-radius:5px;">Learn More</a></p>
+							<p><a href="https://kisscx.com/2022/01/01/Shaping-the-Cross-Border-Shipping-&-Shopping/" class="btn btn-primary w3-black" style="color:white, border: 1px;border-radius:5px;">Learn More</a></p>
 				
 						</div>
   </div>	
@@ -646,7 +649,7 @@ end-->
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016-2023 kisscx. All Rights Reserved.</small> 
+						<small class="block">&copy; 2016-2024 kisscx. All Rights Reserved.</small> 
 						<!--<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="http://blog.gessato.com/" target="_blank">Gessato</a></small>-->
 					</p>
 					
@@ -710,6 +713,84 @@ $(function() {
 });
 
 </script>
+
+<script type="text/javascript">(function() {
+  // Variables
+  var $curve = document.getElementById("curve");
+  var last_known_scroll_position = 0;
+  var defaultCurveValue = 350;
+  var curveRate = 3;
+  var ticking = false;
+  var curveValue;
+
+  // Handle the functionality
+  function scrollEvent(scrollPos) {
+    if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+      curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
+      $curve.setAttribute(
+        "d",
+        "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+      );
+    }
+  }
+
+  // Scroll Listener
+  // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+  window.addEventListener("scroll", function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        scrollEvent(last_known_scroll_position);
+        ticking = false;
+      });
+    }
+
+    ticking = true;
+  });
+})();
+</script>
+
+<!--fun-->
+<script type="text/javascript">
+	(function() {
+  // Variables
+  var $curve = document.getElementById("curve");
+  var last_known_scroll_position = 0;
+  var defaultCurveValue = 350;
+  var curveRate = 2;
+  var ticking = false;
+  var curveValue;
+
+  // Handle the functionality
+  function scrollEvent(scrollPos) {
+    if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+      curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
+      $curve.setAttribute(
+        "d",
+        "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+      );
+    }
+  }
+
+  // Scroll Listener
+  // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+  window.addEventListener("scroll", function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        scrollEvent(last_known_scroll_position);
+        ticking = false;
+      });
+    }
+
+    ticking = true;
+  });
+})();
+
+</script>
+<!--end-->
 
 
 </body>
